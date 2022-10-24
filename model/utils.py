@@ -81,5 +81,5 @@ if __name__=="__main__":
     thal=0
         
     pred=heart(age,sex,cp,trestbps,chol,fbs,restecg,thalach,exang,oldpeak,slope,ca,thal)
-    pred.prediction()
+    pred.prediction()[0]
     
