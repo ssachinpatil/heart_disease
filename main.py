@@ -1,6 +1,6 @@
 from flask import Flask,render_template,request,jsonify
 from model.utils import heart
-
+import config
 
 app=Flask(__name__)
 @app.route('/')
@@ -30,5 +30,5 @@ def get_prediction():
     result=x.prediction()
     return jsonify({'result':f"the prediction is{result}"})
 if __name__=="__main__":
-    app.run(host="0.0.0.0",port=8081)
+    app.run(host="0.0.0.0",port=config.PORT_NUMBER)
     
