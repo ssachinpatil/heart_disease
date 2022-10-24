@@ -27,7 +27,7 @@ def get_prediction():
     ca=eval(a["ca"])
     thal=eval(a["thal"])
     x=heart(age,sex,cp,trestbps,chol,fbs,restecg,thalach,exang,oldpeak,slope,ca,thal)
-    result=x.prediction()
+    result=x.prediction()[0]
     return jsonify({'result':f"the prediction is{result}"})
 if __name__=="__main__":
     app.run(host="0.0.0.0",port=config.PORT_NUMBER)
