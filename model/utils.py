@@ -1,8 +1,10 @@
-
 import json
 import pickle
 import numpy as np
-import config
+try:
+    import config
+except:
+    pass
 
 class heart():
     def __init__(self,age,sex,cp,trestbps,chol,fbs,restecg,thalach,exang,oldpeak,slope,ca,thal):
