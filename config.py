@@ -1,8 +1,8 @@
-
+import os
 import json
 
 PORT_NUMBER=8081
 
-JSON_FILE_PATH=r"C:\Users\Sachin\Desktop\Heart_data\model\json_data.json"
+JSON_FILE_PATH= os.path.join(os.getcwd(),r"model\json_data.json")
 
-MODEL_FILE_PATH= r"C:\Users\Sachin\Desktop\Heart_data\model\heart.pkl"
+MODEL_FILE_PATH= os.path.join(os.getcwd(),r"model\heart.pkl")
